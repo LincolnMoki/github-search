@@ -22,7 +22,7 @@
             </div>
 
             <div class="col-md-6 mb-4">
-               
+
               <div class="card">
                   <div class="card-body">
                     <h4 class="card-title animated fadeInRight" ><p class="text-info"> </p></h4>
@@ -30,13 +30,13 @@
                     <hr>
                    
                     <ul class=" card-text list-group list-group-flush">
-                        <li class="list-group-item animated fadeInRight"> <i class="fas fa-user-friends"></i> Followers: {{profile.followers}}</li>
+                        <li class="list-group-item animated fadeInRight"> <i class="fas fa-user-friends"></i> <strong>Followers</strong>: {{profile.followers}}</li>
               
-                        <li class="list-group-item animated fadeInRight"> <i class="fas fa-users f0c0"></i> Following: {{profile.following}}</li>
+                        <li class="list-group-item animated fadeInRight"> <i class="fas fa-users f0c0"></i> <strong>Following</strong>: {{profile.following}}</li>
               
-                        <li class="list-group-item animated fadeInRight"> <i class="fas fa-folder-open"></i> No of public repos: {{profile.public_repos}}</li>
+                        <li class="list-group-item animated fadeInRight"> <i class="fas fa-folder-open"></i> <strong>No of public repos</strong>: {{profile.public_repos}}</li>
               
-                        <li class="list-group-item animated fadeInRight"> <i class="far fa-clock pr-1"></i> Joined on: {{profile.created_at|date}}</li>
+                        <li class="list-group-item animated fadeInRight"> <i class="far fa-clock pr-1"></i> <strong>Joined on</strong>: {{profile.created_at|date}}</li>
                       </ul>
                   </div>
 
@@ -80,11 +80,11 @@
                     class="fa fa-clock-o" aria-hidden="true">{{repo.created_at | date}}</i></p>
             <a href="{{repo.html_url}}" class="text-align-center" target="_blank" class="btn btn-info">get on github</a>
 
+           </div>
+          </div>
         </div>
-    </div>
-</div>
-</div>
-</main>
+       </div>
+     </main>
 </div>
 
        
