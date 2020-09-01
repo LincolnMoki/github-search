@@ -12,3 +12,17 @@
     text-align: center;
     color: black;
     }
+    #dec{
+      text-align: center;
+    }
+  
+#bio li{
+      margin-top: 1%;
+    }
+   
+.repotitle{
+      text-align: center;
+      font-size: 60px;
+      color: #71ee4b;
+      text-transform: uppercase;
+    }
