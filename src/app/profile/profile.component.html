@@ -1,0 +1,14 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="container-fluid">
+    <div id="head">
+        <h1><img src="https://cdn.pixabay.com/photo/2016/12/17/14/33/wave-1913559__340.jpg"
+            height="5%" width="100%"> </h1>
+    </div>
+    <form class="search-form">
+        <div class="form-group">
+            <input type="text" class="form-control " placeholder="search username" [(ngModel)]="username"
+                name="username" (keyup)="findProfile()">
+        </div>
+    </form>
