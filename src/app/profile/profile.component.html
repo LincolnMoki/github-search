@@ -20,4 +20,23 @@
          <div class="col-md-6 mb-4">
               <img src='{{profile.avatar_url}}' class="img-fluid z-depth-1-half" alt="">
             </div>
+
+            <div class="col-md-6 mb-4">
+               
+              <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title animated fadeInRight" ><p class="text-info"> </p></h4>
+                    <div *ngIf="profile"> <h3> <strong>Result</strong>  <i class="fas fa-spinner animated rotateIn infinite "></i></h3></div>
+                    <hr>
+                   
+                    <ul class=" card-text list-group list-group-flush">
+                        <li class="list-group-item animated fadeInRight"> <i class="fas fa-user-friends"></i> Followers: {{profile.followers}}</li>
+              
+                        <li class="list-group-item animated fadeInRight"> <i class="fas fa-users f0c0"></i> Following: {{profile.following}}</li>
+              
+                        <li class="list-group-item animated fadeInRight"> <i class="fas fa-folder-open"></i> No of public repos: {{profile.public_repos}}</li>
+              
+                        <li class="list-group-item animated fadeInRight"> <i class="far fa-clock pr-1"></i> Joined on: {{profile.created_at|date}}</li>
+                      </ul>
+                  </div>
        
