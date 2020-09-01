@@ -60,4 +60,31 @@
   </div>
 
   </section>
+  <div class="repotitle">
+    <h2>Repositories</h2>
+</div>
+<hr>
+
+
+<div class="card-columns">
+    <div class="card" *ngFor="let repo of repos">
+
+        <div class="card-body">
+            <div id="name">
+                <h4 id="name d-flex justify-content-between align-items-center">{{repo.name}}</h4>
+            </div>
+            <div id="des">
+                <p class="card-textd-flex justify-content-between align-items-center">{{repo.description}}</p>
+            </div>
+            <p class="card-textd-flex justify-content-between align-items-center">updated on:<i
+                    class="fa fa-clock-o" aria-hidden="true">{{repo.created_at | date}}</i></p>
+            <a href="{{repo.html_url}}" class="text-align-center" target="_blank" class="btn btn-info">get on github</a>
+
+        </div>
+    </div>
+</div>
+</div>
+</main>
+</div>
+
        
